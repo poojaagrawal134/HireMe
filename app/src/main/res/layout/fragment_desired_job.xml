@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.DesiredJob">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:text="Desired Job Details"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/textinfo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Indrustry"
+            android:textColor="@android:color/white"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:id="@+id/edtindrustry"
+            android:background="@android:color/white"
+            android:textColorHint="#A3A3A3"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Role"
+            android:textColor="@android:color/white"
+            />
+
+        <Spinner
+            android:id = "@+id/spinner"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:background="@android:color/white"
+            android:textColorHint="#A3A3A3"
+            android:layout_marginBottom="10dp"
+            android:prompt = "@string/app_name"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Expected Salary"
+
+            android:textColor="@android:color/white"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:id="@+id/edtexpectedSalary"
+            android:inputType="text"
+            android:background="@android:color/white"
+            android:textColorHint="#A3A3A3"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Desired Location"
+            android:textColor="@android:color/white"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:id="@+id/edtdesiredLocation"
+            android:inputType="text"
+            android:background="@android:color/white"
+            android:textColorHint="#A3A3A3"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Job Type"
+            android:textColor="@android:color/white"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/joobtype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:text="Permanent"
+                style="@style/question_radio_button_style"
+                />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:text="Contract"
+                style="@style/question_radio_button_style"
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Desired Shift"
+            android:textColor="@android:color/white"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/edtdesiredshift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/unmarried"
+                android:text="Day"
+                style="@style/question_radio_button_style"
+                />
+
+            <RadioButton
+                android:id="@+id/married"
+                android:text="Night"
+                style="@style/question_radio_button_style"
+                />
+
+
+        </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveinfo"
+            android:layout_marginTop="20dp"
+            android:text="Save"/>
+
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+
+</ScrollView>

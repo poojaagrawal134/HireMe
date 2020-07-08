@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/mic"
+        android:title="Mic"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_baseline_mic_none_24"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/notification"
+        android:title="Notification"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_baseline_notifications_active_24"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/log"
+        android:title="Logout"
+        android:orderInCategory="2"
+        app:showAsAction="never"/>
+
+</menu>
